@@ -9,8 +9,13 @@
         numberOfSnowBalls: 350
         }
     }
+    function createSnowBalls(canvas, numberOfSnowBalls){
+      const snowBallPropety = [...Array(numberOfSnowBalls)].map(()=>{
+        });
+    }
     function run(){
     const {canvas, canvasContext, numberOfSnowBalls} = setup();
+    const snowBalls = createSnowBalls(canvas, numberOfSnowBalls);
     }
     run();
 
