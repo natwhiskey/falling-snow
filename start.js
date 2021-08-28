@@ -37,6 +37,13 @@
       return snowBallPropety;
       
     }
+
+    function moveSnowBalls(canvas, snowBall){
+        snowBall.x += snowBall.speedX;
+        snowBall.y += snowBall.speedY;
+
+    }
+
     function run(){
     const {canvas, canvasContext, numberOfSnowBalls} = setup();
     const snowBalls = createSnowBalls(canvas, numberOfSnowBalls);
