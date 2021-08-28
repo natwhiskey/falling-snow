@@ -32,6 +32,8 @@
     function run(){
     const {canvas, canvasContext, numberOfSnowBalls} = setup();
     const snowBalls = createSnowBalls(canvas, numberOfSnowBalls);
+    setInterval(() => {
+    },40);
     }
     run();
 
