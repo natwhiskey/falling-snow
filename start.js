@@ -41,6 +41,9 @@
     const {canvas, canvasContext, numberOfSnowBalls} = setup();
     const snowBalls = createSnowBalls(canvas, numberOfSnowBalls);
     setInterval(() => {
+        snowBalls.forEach((snowBall) => {
+            drawSnowBalls(canvasContext, snowBall);
+        });
     },40);
     }
     run();
