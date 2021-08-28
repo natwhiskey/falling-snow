@@ -47,6 +47,11 @@
         }   else if (snowBall.x < 0) {
             snowBall.x = canvas.width;
         }
+        if (snowBall.y > canvas.height) {
+            snowBall.y = 0;
+        } else if (snowBall.y < 0) {
+            snowBall.y = canvas.height;
+        }
     }
 
     function run(){
