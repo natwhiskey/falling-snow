@@ -61,6 +61,9 @@
         snowBalls.forEach((snowBall) => {
             drawSnowBalls(canvasContext, snowBall);
         });
+        snowBalls.forEach((snowBall) => {
+            moveSnowBalls(canvas, snowBall);
+        });
     },40);
     }
     run();
