@@ -42,6 +42,11 @@
         snowBall.x += snowBall.speedX;
         snowBall.y += snowBall.speedY;
 
+        if (snowBall.x > canvas.width) {
+            snowBall.x = 0;            
+        }   else if (snowBall.x < 0) {
+            snowBall.x = canvas.width;
+        }
     }
 
     function run(){
