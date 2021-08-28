@@ -18,7 +18,7 @@
 
     function drawSnowBalls(canvasContext, snowBalls){
         canvasContext.beginPath();
-        canvasContext.arc(snowBalls.x, snowBalls.y,snowBalls.radius, snowBalls.opacity, Math.PI * 2);
+        canvasContext.arc(snowBalls.x, snowBalls.y,snowBalls.radius, snowBalls.opacity, Math.PI * 2 *snowBalls.radius);
         canvasContext.fillStyle = `rgba(255, 255, 255, ${snowBalls.opacity})`;
         canvasContext.fill();
     }
