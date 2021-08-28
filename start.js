@@ -17,7 +17,17 @@
     }
     function createSnowBalls(canvas, numberOfSnowBalls){
       const snowBallPropety = [...Array(numberOfSnowBalls)].map(()=>{
+          return {
+              x: random(canvas.width, 0),
+              y: random(canvas.height, 0),
+              radius: random(1, 5),
+              opacity: random(4, 2),
+              speedX: random (5, -5), 
+              speedY: random (3, 1),
+            } 
         });
+      return snowBallPropety;
+      
     }
     function run(){
     const {canvas, canvasContext, numberOfSnowBalls} = setup();
