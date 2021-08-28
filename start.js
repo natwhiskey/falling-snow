@@ -9,6 +9,12 @@
         numberOfSnowBalls: 350
         }
     }
+
+    function random(max, min){
+       const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+        return randomNumber; 
+
+    }
     function createSnowBalls(canvas, numberOfSnowBalls){
       const snowBallPropety = [...Array(numberOfSnowBalls)].map(()=>{
         });
